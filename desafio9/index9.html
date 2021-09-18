@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <section>
+
+        <div>Registrate!!</div>
+        <button class="btn btn-success" id="miBoton">USUARIO</button>
+        <p></p>
+    </section> -->
+
+
+    <body>
+        <section>
+            <button class="btn btn-success" id="miBoton">INTERACTUAR</button>
+            <p></p>
+            <form id="formulario">
+                <input type="text" placeholder="ingresa tu nombre" onkeypress="capturarEnter(event)">
+                <!--  -->
+                <input id="edad" type="text" placeholder="ingresa tu edad" onchange="activarValidador(this)">
+                <!--  -->
+                <input type="submit" value="Enviar">
+            </form>
+            <p></p>
+            <p class="textoP">Trata de copiar éste texto</p>
+        </section>
+        <!-- JavaScript Bundle with Popper -->
+
+    <script src="desafio9.js"></script>
+
+    // //OPCION 2
+// boton.onclick = () => { console.log("Ya estas registrado!!"); }
+// boton.onmouseover = () => { console.log("No me toques"); }
+
+// //EVENTOS DE TECLADO
+// let campoEdad = document.getElementById("edad");
+// campoEdad.onkeydown = () => { console.log("Presionaste una tecla!"); }
+// campoEdad.onkeyup = () => { console.log("Soltaste una tecla!"); }
+
+// //EVENTO SUBMIT
+// let formulario = document.getElementById("formulario");
+// formulario.addEventListener("submit", validarFormulario);
+
+// function validarFormulario(e) {
+//     e.preventDefault(); //evita que se borren todos los campos, que es la accion por defecto
+//     if (isNaN(campoEdad.value)) {
+//         console.log("Ingrese un numero en el campo edad");
+//     }
+// }
+
+// //EVENTO CLIPBOARD
+// let textoCopia = document.getElementsByClassName("textoP");
+// textoCopia[0].addEventListener("copy", imprimirAlerta);
+
+// function imprimirAlerta() {
+//     console.log("Copia de texto detectada!!!");
+// }
+
+// //Evento llamado desde el html, por cambio de estado del input de edad
+// function activarValidador(entrada) {
+//     let edadInput = entrada.value;
+//     if (edadInput < 1 || edadInput > 100) {
+//         alert("Edad invalida");
+//     }
+// }
+
+// //Evento de teclado desde html detectando ENTER
+// function capturarEnter(e) {
+//     //segun navegador which o keycode
+//     if (e.which == 13 || e.keyCode == 13) {
+//         alert("Presionaste el ENTER");
+//     }
+// }
+
+// //Evento de ventana
+// window.onload = () => { console.log("Ventana cargada"); }
+</body>
+</html>
